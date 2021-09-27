@@ -8,6 +8,7 @@
     "dev": "env-cmd -f ./.env nodemon server/index.js",
     "server-start": "env-cmd -f ./.env.production forever start server/index.js",
     "server-stop": "env-cmd -f ./.env.production forever stop server/index.js",
+    "server-restart": "env-cmd -f ./.env.production forever start server/index.js && env-cmd -f ./.env.production forever stop server/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {

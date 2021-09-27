@@ -1,5 +1,6 @@
 const express = require("express");
 const { saveContactUs } = require("./contact-us");
+const { fetchArticles } = require("./articles");
 
 // no authentication for now
 const router = express.Router();
@@ -13,5 +14,8 @@ router.get("/", (req, res) => {
 
 // Contact Us
 router.get("/contactus/:subject/:name/:email/:message", saveContactUs);
+
+// Articles
+router.get("/articles", fetchArticles);
 
 module.exports = router;
