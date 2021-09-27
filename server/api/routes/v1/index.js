@@ -1,6 +1,6 @@
 const express = require("express");
 const { saveContactUs } = require("./contact-us");
-const { fetchArticles } = require("./articles");
+const { fetchArticles, fetchArticleById } = require("./articles");
 
 // no authentication for now
 const router = express.Router();
@@ -17,5 +17,6 @@ router.get("/contactus/:subject/:name/:email/:message", saveContactUs);
 
 // Articles
 router.get("/articles", fetchArticles);
+router.get("/articles/:id", fetchArticleById);
 
 module.exports = router;
