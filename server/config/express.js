@@ -2,6 +2,7 @@ const express = require("express");
 const morgan = require("morgan");
 const bodyParser = require("body-parser");
 const path = require("path");
+const cors = require("cors");
 const { logs } = require("./constants");
 const routes = require("../api/routes/v1");
 const error = require("../api/middlewares/helpers/error");
@@ -35,6 +36,9 @@ app.use(function (req, res, next) {
 
 // request logging. dev: console | production: file
 app.use(morgan(logs));
+
+// CORS
+app.use(cors());
 
 // parse body params and attache them to req.body
 app.use(bodyParser.json());
