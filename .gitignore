@@ -1,7 +1,6 @@
-node_modules
 combined.log
 error.log
-node_modules
+/node_modules
 .DS_Store
 
 # dependencies
