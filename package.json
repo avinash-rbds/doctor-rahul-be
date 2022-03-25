@@ -1,41 +1,41 @@
 {
-  "name": "doctor-rahul-backend",
-  "version": "1.0.0",
-  "license": "MIT",
-  "main": "server/index.js",
-  "scripts": {
-    "start": "node server/index.js",
-    "dev": "env-cmd -f ./.env nodemon server/index.js",
-    "server-start": "env-cmd -f ./.env.production forever start server/index.js",
-    "server-stop": "env-cmd -f ./.env.production forever stop server/index.js",
-    "server-restart": "env-cmd -f ./.env.production forever stop server/index.js && env-cmd -f ./.env.production forever start server/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "dependencies": {
-    "axios": "^0.21.1",
-    "body-parser": "^1.19.0",
-    "cloudinary": "^1.27.1",
-    "cors": "^2.8.5",
-    "cron": "^1.8.2",
-    "dotenv": "^9.0.2",
-    "express": "^4.17.1",
-    "express-validation": "^3.0.8",
-    "firebase-admin": "^9.8.0",
-    "formidable": "^1.2.2",
-    "googleapis": "^61.0.0",
-    "handlebars": "^4.7.7",
-    "http": "^0.0.1-security",
-    "http-status": "^1.5.0",
-    "morgan": "^1.10.0",
-    "node-schedule": "^2.0.0",
-    "nodemailer": "^6.4.10",
-    "nodemailer-smtp-transport": "^2.7.4",
-    "path": "^0.12.7",
-    "promise": "^8.1.0",
-    "winston": "^3.3.3",
-    "xoauth2": "^1.2.0"
-  },
-  "devDependencies": {
-    "env-cmd": "^10.1.0"
-  }
+    "name": "doctor-rahul-backend",
+    "version": "1.0.0",
+    "license": "MIT",
+    "main": "server/index.js",
+    "scripts": {
+        "start": "node server/index.js",
+        "dev": "env-cmd -f ./.env nodemon server/index.js",
+        "server-start": "env-cmd -f ./.env.production forever start server/index.js",
+        "server-stop": "env-cmd -f ./.env.production forever stop server/index.js",
+        "server-restart": "env-cmd -f ./.env.production forever stop server/index.js && env-cmd -f ./.env.production forever start server/index.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "dependencies": {
+        "axios": "^0.21.1",
+        "body-parser": "^1.19.0",
+        "cloudinary": "^1.27.1",
+        "cors": "^2.8.5",
+        "cron": "^1.8.2",
+        "dotenv": "^9.0.2",
+        "express": "^4.17.1",
+        "express-validation": "^3.0.8",
+        "firebase-admin": "^10.0.2",
+        "formidable": "^1.2.2",
+        "googleapis": "^61.0.0",
+        "handlebars": "^4.7.7",
+        "http": "^0.0.1-security",
+        "http-status": "^1.5.0",
+        "morgan": "^1.10.0",
+        "node-schedule": "^2.0.0",
+        "nodemailer": "^6.4.10",
+        "nodemailer-smtp-transport": "^2.7.4",
+        "path": "^0.12.7",
+        "promise": "^8.1.0",
+        "winston": "^3.3.3",
+        "xoauth2": "^1.2.0"
+    },
+    "devDependencies": {
+        "env-cmd": "^10.1.0"
+    }
 }

@@ -4,8 +4,12 @@ exports.fetchArticles = (req, res) => {
     const ref = firebase.database().ref("articles");
     ref.once("value", (snapshot) => {
         const data = snapshot.val();
-        const formattedData = data
-            .filter((item) => item !== null)
+
+        let formattedData = Object.entries(data)
+            .filter(([key, value]) => value !== null)
+            .map(([key, value]) => value)
+            // const formattedData = data
+            //     .filter((item) => item !== null)
             .sort((previous, next) => {
                 if (previous.timestamp > next.timestamp) {
                     return -1;

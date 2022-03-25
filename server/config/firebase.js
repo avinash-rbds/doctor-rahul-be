@@ -1,7 +1,7 @@
 const firebase = require("firebase-admin");
 const { projectId } = require("./constants");
 
-var serviceAccount = require("../../doctor-rahul-web-firebase-adminsdk-iofnq-65ba1e1fff.json");
+var serviceAccount = require("../../doctor-rahul-web-firebase-adminsdk-iofnq-81fd5a6ea0.json");
 
 exports.init = () => {
     firebase.initializeApp({
